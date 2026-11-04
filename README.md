@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/aguia.gif" width="100%" alt="Águia voando" />
+  <img src="./assets/aviao.gif" width="100%" alt="Avião voando no céu" />
 </p>
 
 <p align="center">
