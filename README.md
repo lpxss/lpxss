@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Águia voando" />
+  <img src="./assets/aguia.gif" width="100%" alt="Águia voando" />
 </p>
 
 <p align="center">
@@ -75,7 +75,3 @@
 </p>
 
 ---
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,50:E100FF,100:7F00FF&height=120&section=footer" />
-</p>
