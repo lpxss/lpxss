@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           rm -rf cand; mkdir -p cand
-          for id in urSsSZhaRR1FMG4cIT AlRXXdstsK9G1m01vT xUOxfn3TfKndQeEJe8 xT1R9KfNws35Si69AQ jgUbzExZnqORy xT1R9WVuDqh9l891Ys rB3NJTcfynY2D95tWU ak4FYuHATcOfz4uZMJ ck4YllTgyqjskR0HeO uY7mopQ5ov8Pi9RPei WifBLhcWhTJSjw0tho xT1R9PtQqQoxahVFcI alOyhEiiZHPvpjtmPc 3o6nUVmHHXovizyHjq cPlkECgYJPgWYrWRlM PCc64ax1PisMM p8HvKv9rCWQ3k3Shzb GJSYDUFtPJczMvSUXw S1ZGuy93WYvCdv7L0I; do
+          for id in UtEXXnbD8nZoRtZQPd yJvWvOEa5nsTAy7jc6 Ht2LoU26Jm8jZG3OJw EashjVLCRc0UreNBJG hYUp2kPV6T1FOXHWoO JoOV18hVfHQo4tvgCU jtR9VxoH2dwApdLt6X 0QRrqwLTKZJhnPIC8I LWGDfIVBYvVylB5p27 1TN0ueSrpaTq3pzO2C; do
             curl -sL -o cand/$id.gif "https://media.giphy.com/media/$id/giphy.gif" || true
           done
           ls -la cand
