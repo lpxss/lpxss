@@ -1,0 +1,19 @@
+name: baixar gifs
+on:
+  push:
+    branches: [gif-candidates]
+permissions:
+  contents: write
+jobs:
+  dl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p cand
+          for id in AnO8kbBZzYP7i UKSQWMyNsWN7W 5PIE9RaHrHfUY Sxsa5U5I7P8u4 kHYeb4v0w4kSUKwS9P WzPHwb3F7UquLtyvfx XFwAsBa5voBD0I1G9a rdLezvb8LrWjC wzTA5VoNbiZDq 13yd0mUU2Lu8h2 MRoDceuTG8qLS 8K32zXBZpcouc jpKoTr9NCV1GHmUARw l1TJVLJM0hfnGJjE4t jXkeGMKuGHnYk; do
+            curl -sL -o cand/$id.gif "https://media.giphy.com/media/$id/giphy.gif" || true
+          done
+          ls -la cand
+          git config user.name bot; git config user.email bot@users.noreply.github.com
+          git add cand; git commit -m "candidatos"; git push
