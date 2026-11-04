@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p cand
-          for id in AnO8kbBZzYP7i UKSQWMyNsWN7W 5PIE9RaHrHfUY Sxsa5U5I7P8u4 kHYeb4v0w4kSUKwS9P WzPHwb3F7UquLtyvfx XFwAsBa5voBD0I1G9a rdLezvb8LrWjC wzTA5VoNbiZDq 13yd0mUU2Lu8h2 MRoDceuTG8qLS 8K32zXBZpcouc jpKoTr9NCV1GHmUARw l1TJVLJM0hfnGJjE4t jXkeGMKuGHnYk; do
+          rm -rf cand; mkdir -p cand
+          for id in urSsSZhaRR1FMG4cIT AlRXXdstsK9G1m01vT xUOxfn3TfKndQeEJe8 xT1R9KfNws35Si69AQ jgUbzExZnqORy xT1R9WVuDqh9l891Ys rB3NJTcfynY2D95tWU ak4FYuHATcOfz4uZMJ ck4YllTgyqjskR0HeO uY7mopQ5ov8Pi9RPei WifBLhcWhTJSjw0tho xT1R9PtQqQoxahVFcI alOyhEiiZHPvpjtmPc 3o6nUVmHHXovizyHjq cPlkECgYJPgWYrWRlM PCc64ax1PisMM p8HvKv9rCWQ3k3Shzb GJSYDUFtPJczMvSUXw S1ZGuy93WYvCdv7L0I; do
             curl -sL -o cand/$id.gif "https://media.giphy.com/media/$id/giphy.gif" || true
           done
           ls -la cand
